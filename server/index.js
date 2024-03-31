@@ -1,11 +1,11 @@
 const express = require("express")
-// const helmet = require("helmet")
+const helmet = require("helmet")
 
 // creating an Express instance
 const app = express()
 const PORT = process.env.PORT || 8090
 
-// app.use(helmet());
+app.use(helmet());
 
 // initializing a basic API that
 // returns the "Hello, World!" message
